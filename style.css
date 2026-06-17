@@ -1,94 +1,143 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body{
-font-family: "Poppins", sans-serif;
-}
-header{
-background-color: #424e61;
-color: white;
-width: 100%;
-padding: 20px;
-}
-.cabecalho-itens{
-max-width: 1980px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.cabecalho-imagem{
-width: 10%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-.titulo_site{
-padding: 50px;
-text-align: center;
-width: 50%;
-font: 30px;
-}
-.sociais{
-display: flex;
-justify-content: flex-end;
-width: 25%;
-padding-right: 30px;
-}
-.banner1{
-display: flex;
-justify-content: center;
-}
-.estudante_titulo{
-padding: 50px;
-text-align: center;
-
-}
-.estudante-nome{
-text-align: center;
-}
-.estudante-imagem{
-width: 120px;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-background-image: background-color(#faae43);
-padding: 24px 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
-.escola{
-background-image: linear-gradient(#40A2E3,#7FC2EF);
-color: white;
-display: flex;
-justify-content:center;
-padding: 24px 0;
-text-align:center;
-display:block;
-}
-.escola-titulo{
-padding: 50px;
-text-align: center;
-}
-.logo_rodape{
-height: 80px;
-padding: 12px 0;
-
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-.link{
-color: #ffffff;
-text-decoration: none;
+/* ===== HEADER ===== */
+header {
+    background-color: #424e61;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-imagem {
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo_site {
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px; /* corrigido: era 'font: 30px' */
+}
+
+.sociais {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    padding-right: 30px;
+}
+
+/* ===== BANNER ===== */
+.banner1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== ESTUDANTES ===== */
+.estudante_titulo {
+    padding: 50px;
+    text-align: center;
+}
+
+.estudante-nome {
+    text-align: center;
+}
+
+.estudante-imagem {
+    width: 120px;
+}
+
+.estudante-icone {
+    width: 38px;
+    padding: 4px 8px;
+}
+
+.estudante {
+    background-color: #faae43; /* corrigido: era background-image */
+    padding: 24px 0;
+}
+
+.estudante-div { /* corrigido: era .estudante.div */
+    text-align: center;
+    padding: 24px 0;
+}
+
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* adicionado para responsividade */
+    gap: 20px; /* adicionado para espaçamento */
+}
+
+/* ===== ESCOLA ===== */
+.escola {
+    background-image: linear-gradient(#40A2E3, #7FC2EF);
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.escola-titulo {
+    padding: 50px;
+    text-align: center;
+}
+
+/* ===== RODAPÉ ===== */
+.logo_rodape {
+    height: 80px;
+    padding: 12px 0;
+}
+
+/* ===== LINKS ===== */
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:hover { /* adicionado para interação */
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .cabecalho-itens {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cabecalho-imagem,
+    .titulo_site,
+    .sociais {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .titulo_site {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .estudantes_todos {
+        flex-direction: column;
+        align-items: center;
+    }
 }
