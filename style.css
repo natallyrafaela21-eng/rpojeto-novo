@@ -50,6 +50,9 @@ header {
     width: 35px;
     margin: 0 5px;
     cursor: pointer;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 /* ===== INTRODUÇÃO ===== */
