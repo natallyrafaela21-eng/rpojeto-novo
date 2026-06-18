@@ -5,41 +5,59 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f8f4f0;
-    color: #2c2c2c;
+    font-family: "Poppins", sans-serif;
+    background: #f5f0eb;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background-color: #424e61;
+    color: white;
+    width: 100%;
     padding: 20px;
 }
 
-/* ===== HEADER ===== */
-header {
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    color: white;
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho_imagem {
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo_site {
+    padding: 50px;
     text-align: center;
-    padding: 50px 20px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 50%;
+    font-size: 30px;
 }
 
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+.sociais {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    padding-right: 30px;
 }
 
-.subtitulo {
-    font-size: 1.2rem;
-    opacity: 0.8;
-    font-weight: 300;
+.sociais img {
+    width: 35px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 /* ===== INTRODUÇÃO ===== */
 .introducao {
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 40px auto;
     background: white;
-    padding: 30px;
+    padding: 35px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     text-align: center;
@@ -57,260 +75,207 @@ header h1 {
     color: #555;
 }
 
-/* ===== RANKING ===== */
-.ranking {
-    max-width: 900px;
-    margin: 0 auto;
+/* ===== ESTUDANTES / LIVROS ===== */
+.estudante {
+    background-color: #faae43;
+    padding: 24px 0;
 }
 
-.livro {
-    background: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+.estudante_titulo {
+    padding: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a2e;
+}
+
+.estudantes_todos {
     display: flex;
-    gap: 25px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-left: 6px solid #ccc;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
 }
 
-.livro:hover {
+.estudante-div {
+    text-align: center;
+    padding: 24px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    transition: transform 0.3s;
+    width: 220px;
+    border-top: 5px solid #ccc;
+}
+
+.estudante-div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
-/* Cores diferentes para cada livro */
-.livro-1 { border-left-color: #FFD700; }
-.livro-2 { border-left-color: #C0C0C0; }
-.livro-3 { border-left-color: #CD7F32; }
-.livro-4 { border-left-color: #6C63FF; }
-.livro-5 { border-left-color: #FF6B6B; }
+/* Cores para cada posição */
+.estudante-div:nth-child(1) { border-top-color: #FFD700; }
+.estudante-div:nth-child(2) { border-top-color: #C0C0C0; }
+.estudante-div:nth-child(3) { border-top-color: #CD7F32; }
+.estudante-div:nth-child(4) { border-top-color: #6C63FF; }
+.estudante-div:nth-child(5) { border-top-color: #FF6B6B; }
 
 /* ===== POSIÇÃO ===== */
-.posicao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 70px;
-    font-weight: 700;
+.posicao-ranking {
+    display: inline-block;
+    background: #1a1a2e;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-.numero {
-    font-size: 2.5rem;
+/* ===== CAPA DO LIVRO ===== */
+.capa-livro {
+    width: 150px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* ===== TÍTULO ===== */
+.estudante-nome {
+    font-size: 1.1rem;
     color: #1a1a2e;
+    margin: 12px 0 5px;
+    font-weight: 600;
 }
 
-.medalha {
-    font-size: 2rem;
-}
-
-/* ===== CONTEÚDO DO LIVRO ===== */
-.conteudo-livro {
-    flex: 1;
-}
-
-.conteudo-livro h2 {
-    font-size: 1.8rem;
-    color: #1a1a2e;
-    margin-bottom: 5px;
-}
-
-.autor {
-    color: #888;
+/* ===== AUTOR ===== */
+.autor-livro {
+    color: #555;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
-.estrelas {
+/* ===== NOTA ===== */
+.nota-livro {
     color: #f39c12;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.resumo {
-    color: #555;
-    line-height: 1.8;
-    font-size: 1rem;
-    margin-bottom: 12px;
-}
-
-.tags {
+/* ===== TAGS (GÊNEROS) ===== */
+.tags-livro {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 12px;
+    gap: 5px;
+    justify-content: center;
 }
 
 .tag {
-    background: #f0f0f0;
-    padding: 4px 14px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #555;
-}
-
-.frase {
-    font-style: italic;
-    color: #1a1a2e;
-    background: #f8f4f0;
-    padding: 12px 18px;
-    border-radius: 10px;
-    border-left: 4px solid #0f3460;
-    font-size: 0.95rem;
-}
-
-/* ===== TABELA DE COMPARAÇÃO ===== */
-.comparacao {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 12px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.comparacao h2 {
-    text-align: center;
-    color: #1a1a2e;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-}
-
-.tabela {
-    overflow-x: auto;
-}
-
-.linha {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 12px 15px;
-    border-bottom: 1px solid #eee;
-    gap: 10px;
-}
-
-.linha:last-child {
-    border-bottom: none;
-}
-
-.titulos {
-    font-weight: 700;
-    color: #1a1a2e;
-    background: #f8f4f0;
-    border-radius: 8px;
-    border-bottom: 2px solid #ddd;
-}
-
-.linha span {
-    word-break: break-word;
+    font-size: 0.7rem;
+    color: #555;
+    font-weight: 500;
 }
 
 /* ===== RODAPÉ ===== */
-footer {
-    text-align: center;
+footer.escola {
+    background-image: linear-gradient(#40A2E3, #7FC2EF);
+    color: white;
     padding: 30px 20px;
-    color: #888;
-    border-top: 2px solid #eee;
-    margin-top: 30px;
+    text-align: center;
+}
+
+.logo_rodape {
+    height: 80px;
+    padding: 12px 0;
+}
+
+.escola-título {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ffd700;
 }
 
 footer p {
-    font-size: 0.95rem;
-}
-
-.footer-sub {
-    font-size: 0.8rem;
-    opacity: 0.7;
-    margin-top: 5px;
+    margin: 8px 0;
+    font-size: 14px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .subtitulo {
-        font-size: 1rem;
-    }
-
-    .livro {
+    .cabecalho-itens {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
         gap: 15px;
     }
 
-    .posicao {
-        flex-direction: row;
-        gap: 10px;
-        min-width: unset;
+    .titulo_site {
+        font-size: 24px;
+        padding: 20px;
         width: 100%;
     }
 
-    .numero {
-        font-size: 1.8rem;
+    .cabecalho_imagem {
+        width: 30%;
+        justify-content: center;
     }
 
-    .medalha {
-        font-size: 1.5rem;
+    .sociais {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
     }
 
-    .conteudo-livro h2 {
-        font-size: 1.4rem;
+    .estudante-div {
+        width: 180px;
+        padding: 15px;
     }
 
-    .linha {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 10px;
-    }
-
-    .titulos {
-        display: none;
-    }
-
-    .linha span:not(:first-child)::before {
-        content: "• ";
-        color: #888;
+    .capa-livro {
+        width: 120px;
+        height: 180px;
     }
 
     .introducao {
         padding: 20px;
+        margin: 20px;
     }
 
-    .introducao p {
-        font-size: 1rem;
+    .estudante_titulo {
+        font-size: 1.5rem;
+        padding: 30px;
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
+    .estudante-div {
+        width: 160px;
+        padding: 12px;
     }
 
-    header {
-        padding: 30px 15px;
+    .capa-livro {
+        width: 100px;
+        height: 150px;
     }
 
-    header h1 {
-        font-size: 1.6rem;
+    .estudante_titulo {
+        font-size: 1.2rem;
+        padding: 20px;
     }
 
-    .livro {
+    .titulo_site {
+        font-size: 20px;
         padding: 15px;
-    }
-
-    .tag {
-        font-size: 0.7rem;
-        padding: 3px 10px;
-    }
-
-    .frase {
-        font-size: 0.85rem;
-        padding: 10px 12px;
     }
 }
