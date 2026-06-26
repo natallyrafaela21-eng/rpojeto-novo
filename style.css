@@ -11,7 +11,7 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-color:#e0ba11;
+    background-color:#f3b807;
     color: white;
     width: 100%;
     padding: 20px;
@@ -189,7 +189,7 @@ header {
 
 /* ===== RODAPÉ ===== */
 footer.escola {
-    background-image: linear-gradient(#40A2E3, #7FC2EF);
+    background-image: linear-gradient(#dab50f, #ccdd0b);
     color: white;
     padding: 30px 20px;
     text-align: center;
