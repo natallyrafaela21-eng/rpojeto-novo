@@ -89,6 +89,7 @@ header{
 .estudante_titulo{
     padding:50px;
     text-align:center;
+    font-size:35px;
     color:#1a1a2e;
 }
 
@@ -106,6 +107,7 @@ header{
 
 .estudante-imagem{
     width:120px;
+     margin-bottom:12px;
 }
 
 .estudante-nome{
@@ -118,10 +120,11 @@ header{
 }
 
 .autor-livro{
+     margin:6px 0;
     color:#444;
     font-style:italic;
     font-size:15px;
-    margin:6px 0;
+
 }
 
 .nota-livro{
@@ -132,6 +135,7 @@ header{
 }
 
 .genero{
+       margin-top:8px;
     font-size:16px;
     color:#333;
     font-weight:500;
@@ -141,7 +145,7 @@ header{
 .posicao-ranking{
     font-weight:bold;
     margin-bottom:10px;
-    
+
 }
 
 /* ===== RODAPÉ ===== */
