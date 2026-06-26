@@ -106,17 +106,15 @@ header {
 
 .estudante-div {
     text-align: center;
-    padding: 24px 20px;
+    padding: 24px 10px;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    transition: transform 0.3s;
+    border-radius: 8px;
+
     width: 220px;
     border-top: 5px solid #ccc;
 }
 
-.estudante-div:hover {
-    transform: translateY(-5px);
-}
+
 
 /* Cores para cada posição */
 .estudante-div:nth-child(1) { border-top-color: #FFD700; }
