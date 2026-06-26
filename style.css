@@ -99,7 +99,7 @@ header{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap: 25px;
+    gap: 20px;
 }
 
 .estudante-div{
@@ -114,11 +114,11 @@ header{
 
 .estudante-nome{
     text-align:center;
-    font-size:18px;
+    font-size:16px;
     font-weight:700;
     color:#1a1a2e;
-    margin-top:10px 0;
-
+  max-width:180px;
+margin:10px auto;
 }
 
 .autor-livro{
