@@ -47,15 +47,14 @@ header {
 }
 
 .sociais img {
-    w.sociais img {
+    .sociais img {
     width: 30px;
     height: 30px;
     cursor: pointer;
     background: white;
     border-radius: 50%;
     padding:0px;
-    transition: transform 0.3s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
 }
 
 }
@@ -65,9 +64,7 @@ header {
     max-width: 900px;
     margin: 40px auto;
     background: white;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 30px;
     text-align: center;
 }
 
@@ -105,30 +102,17 @@ header {
 }
 
 .estudante-div {
-    text-align: center;
-    padding: 24px 10px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-
-    width: 220px;
-    border-top: 5px solid #ccc;
+    text-align:center;
+    padding:24px 0;
 }
 
 
 
-/* Cores para cada posição */
-.estudante-div:nth-child(1) { border-top-color: #FFD700; }
-.estudante-div:nth-child(2) { border-top-color: #C0C0C0; }
-.estudante-div:nth-child(3) { border-top-color: #CD7F32; }
-.estudante-div:nth-child(4) { border-top-color: #6C63FF; }
-.estudante-div:nth-child(5) { border-top-color: #FF6B6B; }
+
 
 /* ===== POSIÇÃO ===== */
 .posicao-ranking {
-    display: inline-block;
-    background: #1a1a2e;
-    color: white;
-    padding: 5px 15px;
+
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -137,11 +121,8 @@ header {
 
 /* ===== CAPA DO LIVRO ===== */
 .capa-livro {
-    width: 150px;
-    height: 220px;
-    border-radius: 8px;
-    object-fit: cover;
-    border: 3px solid white;
+    width: 120px;
+    
 }
 
 /* ===== TÍTULO ===== */
@@ -168,28 +149,13 @@ header {
     margin-bottom: 10px;
 }
 
-/* ===== TAGS (GÊNEROS) ===== */
-.tags-livro {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-}
 
-.tag {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 3px 12px;
-    border-radius: 15px;
-    font-size: 0.7rem;
-    color: #555;
-    font-weight: 500;
-}
 
 /* ===== RODAPÉ ===== */
 footer.escola {
     background-image: linear-gradient(#da900f, #ddb30b);
     color: white;
-    padding: 30px 20px;
+    padding: 24px 0px;
     text-align: center;
 }
 
@@ -220,51 +186,9 @@ footer p {
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-    .cabecalho-itens {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    .titulo_site {
-        font-size: 24px;
-        padding: 20px;
-        width: 100%;
-    }
 
-    .cabecalho_imagem {
-        width: 30%;
-        justify-content: center;
-    }
-
-    .sociais {
-        width: 100%;
-        justify-content: center;
-        padding-right: 0;
-    }
-
-    .estudante-div {
-        width: 180px;
-        padding: 15px;
-    }
-
-    .capa-livro {
-        width: 120px;
-        height: 180px;
-    }
-
-    .introducao {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .estudante_titulo {
-        font-size: 1.5rem;
-        padding: 30px;
-    }
-}
-
-@media (max-width: 480px) {
+ {
     .estudante-div {
         width: 160px;
         padding: 12px;
