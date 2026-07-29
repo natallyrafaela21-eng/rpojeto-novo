@@ -15,7 +15,7 @@ header{
     background-color:#f3b807;
     color:white;
     width:100%;
-    padding:10px 20px; /* Reduzido o padding vertical de 20px para 10px */
+    padding:20px;
 }
 
 .cabecalho-itens{
@@ -23,23 +23,22 @@ header{
     margin:0 auto;
     display:flex;
     align-items:center;
-    justify-content:space-between; /* Distribui melhor os elementos horizontalmente */
+    justify-content:center;
 }
 
-/* Corrigido: adicionado ponto de classe e removido chaves extras */
-.cabecalho_imagem {
-  width: 60px; /* Reduzido levemente para economizar espaço vertical */
-  height: 60px;
+cabecalho_imagem {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
-}
+};}
 
 .titulo_site{
-    padding:10px 20px; /* Reduzido drasticamente o padding de 50px para 10px */
+    padding:50px;
     text-align:center;
-    width:40%;
-    font-size:24px; /* Reduzido de 30px para 24px para evitar quebras de linha gigantes */
+    width:50%;
+    font-size:30px;
 }
 
 .sociais{
@@ -48,15 +47,17 @@ header{
     align-items:center;
     gap:15px;
     width:30%;
+    padding-right:60px;
 }
 
 .sociais img{
-    width:40px; /* Reduzido de 50px para 40px para achatar o banner */
-    height:40px;
+    width:50px;
+    height:50px;
     background:white;
     border-radius:50%;
     padding:3px;
     cursor:pointer;
+
 }
 
 /* ===== INTRODUÇÃO ===== */
@@ -95,12 +96,13 @@ header{
     color:#1a1a2e;
 }
 
-.students_todos{
+.estudantes_todos{
     display:flex;
     justify-content:center;
     flex-wrap:nowrap;
     gap: 20px;
     padding: 0 15px;
+
 }
 
 .estudante-div{
@@ -111,7 +113,7 @@ header{
 
 .estudante-imagem{
     width:135px;
-    margin-bottom:12px;
+     margin-bottom:12px;
 }
 
 .estudante-nome{
@@ -119,15 +121,16 @@ header{
     font-size:16px;
     font-weight:700;
     color:#1a1a2e;
-    max-width:190px;
-    margin:10px auto;
+  max-width:190px;
+margin:10px auto;
 }
 
 .autor-livro{
-    margin:6px 0;
+     margin:6px 0;
     color:#444;
     font-style:italic;
     font-size:15px;
+
 }
 
 .nota-livro{
@@ -138,15 +141,17 @@ header{
 }
 
 .genero{
-    margin-top:8px;
+       margin-top:8px;
     font-size:16px;
     color:#333;
     font-weight:500;
+
 }
 
 .posicao-ranking{
     font-weight:bold;
     margin-bottom:10px;
+
 }
 
 /* ===== RODAPÉ ===== */
