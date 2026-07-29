@@ -1,186 +1,153 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:"Poppins",sans-serif;
-    background:#f5f0eb;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-/* ===== CABEÇALHO ===== */
-
-header{
-    background-color:#f3b807;
-    color:white;
-    width:100%;
-    padding:20px;
+header {
+    background-color: #111844;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
 }
 
-.cabecalho-itens{
-    max-width:1980px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-cabecalho_imagem {
+.cabecalho_imagem {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
-};
-
-.titulo_site{
-    padding:50px;
-    text-align:center;
-    width:50%;
-    font-size:30px;
 }
 
-.sociais{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:15px;
-    width:30%;
-    padding-right:60px;
+
+.titulo_site {
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
 }
 
-.sociais img{
-    width:50px;
-    height:50px;
-    background:white;
-    border-radius:50%;
-    padding:3px;
-    cursor:pointer;
-
+.sociais {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    padding-right: 30px;
 }
 
-/* ===== INTRODUÇÃO ===== */
-
-.introducao{
-    max-width:1100px;
-    margin:30px auto;
-    background:white;
-    padding:25px;
-    text-align:center;
+.banner1 {
+    display: flex;
+    justify-content: center;
 }
 
-.introducao h2{
-    color:#b8860b;
-    margin-bottom:15px;
-    font-size:28px;
+.estudante_titulo {
+    padding: 50px;
+    text-align: center;
 }
 
-.introducao p{
-    font-size:18px;
-    line-height:1.8;
-    color:#555;
+.estudante-nome {
+    text-align: center;
 }
 
-/* ===== LIVROS ===== */
-
-.estudante{
-    background-color:#faae43;
-    padding:24px 0;
+.estudante-imagem {
+    width: 120px;
 }
 
-.estudante_titulo{
-    padding:40px;
-    text-align:center;
-    font-size:32px;
-    color:#1a1a2e;
+.estudante-icone {
+    width: 38px;
+    padding: 4px 8px;
 }
 
-.estudantes_todos{
-    display:flex;
-    justify-content:center;
-    flex-wrap:nowrap;
-    gap: 20px;
-    padding: 0 15px;
-
+.estudante {
+    background-color: #4B5694; /* Corrigido: removido o erro 'background-image: background-color' */
+    padding: 24px 0;
 }
 
-.estudante-div{
-    width:210px;
-    text-align:center;
-    padding:24px 0;
+.estudante div { /* Corrigido: removido o ponto antes de 'div' para selecionar as tags dentro da classe */
+    text-align: center;
+    padding: 24px 0;
 }
 
-.estudante-imagem{
-    width:135px;
-     margin-bottom:12px;
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
 }
 
-.estudante-nome{
-    text-align:center;
-    font-size:16px;
-    font-weight:700;
-    color:#1a1a2e;
-  max-width:190px;
-margin:10px auto;
+.escola {
+    background-image: linear-gradient(#7288AE,#7288AE);
+    color: rgb(255, 255, 255);
+    padding: 24px 0;
+    text-align: center;
+    display: block; /* Simplificado: removido o flex duplicado para evitar conflitos */
 }
 
-.autor-livro{
-     margin:6px 0;
-    color:#444;
-    font-style:italic;
-    font-size:15px;
-
+.escola-titulo {
+    padding: 50px;
+    text-align: center;
 }
 
-.nota-livro{
-    color:#d48806;
-    font-size:18px;
-    font-weight:bold;
-    margin:8px 0;
+.logo_rodape {
+    height: 80px;
+    padding: 12px 0;
 }
 
-.genero{
-       margin-top:8px;
-    font-size:16px;
-    color:#333;
-    font-weight:500;
-
+.link {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.posicao-ranking{
-    font-weight:bold;
-    margin-bottom:10px;
-
+/* Container principal do mapa */
+.mapa-local {
+  max-width: 600px;         /* Define uma largura máxima agradável para leitura */
+  margin: 20px auto;        /* Centraliza o bloco na tela e adiciona espaço vertical */
+  padding: 20px;            /* Espaçamento interno antes do conteúdo */
+  background-color: #ffffff;/* Fundo branco para destacar o mapa */
+  border-radius: 12px;      /* Bordas arredondadas no container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave moderna */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===== RODAPÉ ===== */
-
-.escola{
-    background-image:linear-gradient(#da900f,#ddb30b);
-    color:white;
-    text-align:center;
-    padding:12px 0;
+/* Estilização do título */
+.mapa-local h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333333;           /* Cor do texto escura e legível */
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.logo_rodape{
-    height:50px;
-    padding:12px 0;
+/* Estilização do iframe (mapa) */
+.mapa-local iframe {
+  display: block;           /* Remove pequenos espaços em branco abaixo do iframe */
+  border-radius: 8px;       /* Bordas arredondadas diretamente no mapa */
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); /* Detalhe sutil de borda interna */
+  transition: transform 0.3s ease; /* Transição suave caso queira aplicar efeitos */
 }
 
-.escola-titulo{
-    padding:20px;
+/* Ajustes de responsividade para telas de celulares */
+@media (max-width: 480px) {
+  .mapa-local {
+    margin: 10px;           /* Reduz a margem lateral em telas muito pequenas */
+    padding: 15px;
+  }
+  
+  .mapa-local iframe {
+    height: 200px;          /* Diminui um pouco a altura em celulares menores */
+  }
 }
 
-.link{
-    color:white;
-    text-decoration:none;
-}
 
-.link:hover{
-    text-decoration:underline;
-}
-
-footer p{
-    margin:8px 0;
-}
