@@ -26,7 +26,7 @@ header {
     justify-content: center;
 }
 
-.cabecalho-imagem {
+.cabecalho_imagem {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -42,16 +42,41 @@ header {
     font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
 }
 
-.sociais {
-    display: flex;
-    justify-content: flex-end;
-    width: 25%;
-    padding-right: 30px;
+.sociais{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    width:25%;
+    padding-right:30px;
 }
 
-.banner1 {
-    display: flex;
-    justify-content: center;
+.sociais img{
+    width:45px;
+    height:45px;
+    background:white;
+    border-radius:50%;
+    padding:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sociais img:hover{
+    transform:scale(1.1);
+}
+
+.banner1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.banner-imagem{
+    width:90%;
+    max-width:1100px;
+    border-radius:15px;
+    display:block;
 }
 
 .estudante_titulo {
@@ -82,9 +107,11 @@ header {
     padding: 24px 0;
 }
 
-.estudantes_todos {
-    display: flex;
-    justify-content: space-around;
+.estudantes_todos{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
 }
 
 .escola {
