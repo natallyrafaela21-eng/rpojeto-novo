@@ -181,6 +181,19 @@ margin:10px auto;
     text-decoration:underline;
 }
 
-footer p{
+footer p
+{
     margin:8px 0;
+}.introducao {
+    width: 100%;                  /* Força a seção a ocupar a tela inteira */
+    max-width: 100%;              /* Remove o limite de 1100px */
+    margin: 0 auto;               /* Remove a margem superior/inferior se quiser colar no topo */
+    
+    /* Configurações da imagem de fundo */
+    background-size: cover;       /* Preenche todo o espaço sem distorcer */
+    background-position: center;  /* Centraliza a imagem na tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    
+    padding: 60px 20px;           /* Dá um bom espaço interno para o texto/conteúdo */
+    text-align: center;
 }
