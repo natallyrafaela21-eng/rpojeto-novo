@@ -26,12 +26,13 @@ header{
     justify-content:center;
 }
 
-.cabecalho-imagem{
-    width:160px;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-}
+cabecalho_imagem {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+};
 
 .titulo_site{
     padding:50px;
