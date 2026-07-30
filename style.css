@@ -65,18 +65,19 @@ header {
     transform:scale(1.1);
 }
 
-.banner1{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    margin:30px 0;
+.banner1 {
+    width: 100%;
+    max-width: 1100px; /* Limita a largura máxima do container */
+    margin: 30px auto; /* Centraliza o container */
+    padding: 0 20px;
 }
 
-.banner-imagem{
-    width:100%;
-    max-width:1100px;
-    border-radius:15px;
-    display:block;
+
+.banner-imagem {
+    width: 100%; /* Ocupa 100% do container pai */
+    height: auto; /* Mantém proporção */
+    border-radius: 15px;
+    display: block;
 }
 
 .estudante_titulo {
