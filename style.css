@@ -66,10 +66,11 @@ header {
 }
 
 .banner1 {
-    width: 100%;
-    max-width: 1100px; /* Limita a largura máxima do container */
-    margin: 30px auto; /* Centraliza o container */
-    padding: 0 20px;
+    height: 180px;
+    background: linear-gradient(90deg, #ffa703, #ffffff, #ffa703);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
