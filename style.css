@@ -73,7 +73,14 @@ header {
     align-items: center;
 }
 
+.banner-texto{
+text-align: center;
+}
 
+.banner-texto h1 {
+    font-size: 52px;
+    color: #0000
+}
 .banner-imagem {
     width: 100%; /* Ocupa 100% do container pai */
     height: auto; /* Mantém proporção */
