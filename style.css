@@ -109,13 +109,20 @@ text-align: center;
 }
 
 .estudante{
-    background-image: url("fundo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     padding: 40px 0;
+
+    background-color: #fff6d8;
+
+    background-image:
+        linear-gradient(rgba(255,246,216,0.90), rgba(255,246,216,0.90)),
+        url("fundo.png");
+
+    background-size: 220px;   /* diminui a imagem */
+    background-repeat: repeat;
+    background-position: center;
+    
 }
+
 
 .estudante-div{
     width:250px;
