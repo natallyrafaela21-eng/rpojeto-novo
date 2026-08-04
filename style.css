@@ -109,8 +109,12 @@ text-align: center;
 }
 
 .estudante{
-    background:#FFF5CC;
-    padding:50px 20px;
+    background-image: url("fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 40px 0;
 }
 
 .estudante-div{
