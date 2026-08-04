@@ -18,20 +18,20 @@ header {
     padding: 20px;
 }
 
-.cabecalho-itens {
-    max-width: 1980px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cabecalho-itens{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.cabecalho_imagem {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
+.cabecalho_imagem{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
 }
 
 
@@ -77,10 +77,12 @@ header {
 text-align: center;
 }
 
-.banner-texto h1 {
-    font-size: 52px;
-    color: #0000
+.banner-texto h1{
+    font-size:52px;
+    color:#111844;
+    font-weight:700;
 }
+
 .banner-imagem {
     width: 100%; /* Ocupa 100% do container pai */
     height: auto; /* Mantém proporção */
@@ -106,16 +108,25 @@ text-align: center;
     padding: 4px 8px;
 }
 
-.estudante {
-    background-color: #ecc217; /* Corrigido: removido o erro 'background-image: background-color' */
-    padding: 24px 0;
+.estudante{
+    background:#FFF5CC;
+    padding:50px 20px;
 }
 
-.estudante div { /* Corrigido: removido o ponto antes de 'div' para selecionar as tags dentro da classe */
-    text-align: center;
-    padding: 24px 0;
+.estudante-div{
+    width:250px;
+    background:#fff;
+    border:3px solid #fac02c;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
+.estudante-div:hover{
+    transform:translateY(-8px);
+}
 .estudantes_todos{
     display:flex;
     justify-content:center;
