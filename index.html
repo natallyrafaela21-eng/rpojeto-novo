@@ -133,6 +133,8 @@
             </div>
 
         </div>
+        
+        </section>
 
 
 
@@ -154,6 +156,8 @@
 
     </div>
 
+<button id="btn-surpresa">🎉 Clique para uma Surpresa!</button>
+
     <!-- RODAPÉ -->
     <footer class="escola">
 
@@ -163,6 +167,24 @@
         <p>Projeto de Front End • © 2026</p>
 
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+
+const botao = document.getElementById("btn-surpresa");
+
+botao.addEventListener("click", function(){
+
+    confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 }
+    });
+
+});
+
+</script>
+
 
 </body>
 </html>
