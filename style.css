@@ -145,12 +145,11 @@ text-align: center;
     gap:25px;
 }
 
-.escola {
-    background-image: linear-gradient(#edca00,#e7d84e);
-    color: rgb(255, 255, 255);
-    padding: 24px 0;
+.escola{
+    background-image: linear-gradient(#edca00, #e7d84e);
+    color: #ffffff;
     text-align: center;
-    display: block; /* Simplificado: removido o flex duplicado para evitar conflitos */
+    padding: 40px 0;
 }
 
 .escola-titulo {
