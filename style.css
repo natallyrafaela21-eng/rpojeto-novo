@@ -158,14 +158,12 @@ text-align: center;
     text-align: center;
 }
 
-.logo_rodape {
-    height: 80px;
-    padding: 12px 0;
-}
-
-.link {
-    color: #ffffff;
-    text-decoration: none;
+.logo_rodape{
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto 20px auto;
+    object-fit: contain;
 }
 
 /* ==========================
