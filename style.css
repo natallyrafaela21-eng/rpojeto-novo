@@ -40,26 +40,27 @@ border:4px solid white;
     font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
 }
 
-/* Estilo da lista do menu */
-.menu ul {
-    list-style: none; /* Remove a bolinha do menu vertical */
+/* Estilização do Menu Navegação */
+ul.vertical.ex {
+    list-style-type: none; /* Remove as bolinhas do menu */
     margin: 0;
     padding: 0;
-    display: flex; /* Deixa os itens lado a lado */
+    display: flex; /* Transforma o menu vertical em horizontal */
     gap: 20px; /* Espaço entre os links */
 }
 
-/* Estilo dos links do menu */
-.menu a {
-    text-decoration: none;
+ul.vertical.ex li a {
     color: #ffffff;
-    font-weight: bold;
+    text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color 0.2s ease;
 }
 
-/* Indicador visual do link ativo */
-.menu a.active,
-.menu a:hover {
+ul.vertical.ex li a:hover,
+ul.vertical.ex li a.active {
+    color: #333333; /* Destaque no hover e na página ativa */
     text-decoration: underline;
 }
 
