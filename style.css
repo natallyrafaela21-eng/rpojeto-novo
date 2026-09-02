@@ -115,12 +115,10 @@ text-align: center;
         linear-gradient(rgba(255,246,216,0.90), rgba(255,246,216,0.90)),
         url("fundo.png");
 
-    background-size: 220px;   /* diminui a imagem */
+    background-size: 220px;
     background-repeat: repeat;
     background-position: center;
-    
 }
-
 
 .estudante-div{
     width:250px;
@@ -130,12 +128,8 @@ text-align: center;
     padding:20px;
     text-align:center;
     box-shadow:0 6px 15px rgba(0,0,0,.15);
-    transition:.3s;
 }
 
-.estudante-div:hover{
-    transform:translateY(-8px);
-}
 .estudantes_todos{
     display:flex;
     justify-content:center;
