@@ -62,7 +62,7 @@ ul.vertical.ex li a {
 
 ul.vertical.ex li a:hover,
 ul.vertical.ex li a.active {
-    color: #333333; /* Destaque no hover e na página ativa */
+    color: #ffffff; /* Destaque no hover e na página ativa */
     text-decoration: underline;
 }
 
