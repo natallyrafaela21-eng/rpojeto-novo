@@ -40,13 +40,15 @@ border:4px solid white;
     font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
 }
 
-/* Estilização do Menu Navegação */
+/* Estilização do Menu Navegação Centralizado */
 ul.vertical.ex {
     list-style-type: none; /* Remove as bolinhas do menu */
-    margin: 0;
+    margin: 0 auto; /* Centraliza a lista no container */
     padding: 0;
     display: flex; /* Transforma o menu vertical em horizontal */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
     gap: 20px; /* Espaço entre os links */
+    width: 100%; /* Garante que o menu ocupe toda a largura disponível */
 }
 
 ul.vertical.ex li a {
