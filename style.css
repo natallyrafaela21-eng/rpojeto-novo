@@ -40,6 +40,29 @@ border:4px solid white;
     font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
 }
 
+/* Estilo da lista do menu */
+.menu ul {
+    list-style: none; /* Remove a bolinha do menu vertical */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Deixa os itens lado a lado */
+    gap: 20px; /* Espaço entre os links */
+}
+
+/* Estilo dos links do menu */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Indicador visual do link ativo */
+.menu a.active,
+.menu a:hover {
+    text-decoration: underline;
+}
+
 .sociais{
     display:flex;
     justify-content:flex-end;
